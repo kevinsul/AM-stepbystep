@@ -328,8 +328,6 @@ Assessments analyze your inventory and produce Azure readiness ratings, right-si
 
 7. Once created, the assessment will appear in the **Assessments** list under **Decide and plan** > **Assessments**.
 
-   > **Note:** For performance-based assessments, wait at least **24 hours** after discovery before creating the assessment to ensure sufficient performance data has been collected.
-
 > **Reference:** [Create an Azure VM assessment](https://learn.microsoft.com/azure/migrate/how-to-create-assessment) | [Best practices for creating assessments](https://learn.microsoft.com/azure/migrate/best-practices-assessment)
 
 ---
