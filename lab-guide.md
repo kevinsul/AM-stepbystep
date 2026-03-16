@@ -328,6 +328,8 @@ Assessments analyze your inventory and produce Azure readiness ratings, right-si
 
 7. Once created, the assessment will appear in the **Assessments** list under **Decide and plan** > **Assessments**.
 
+> **Note:** After creating an assessment, it may take **several minutes or more** before processing is complete and results are ready to review. Refresh the Assessments list periodically and wait for the status to show as completed before moving on to Part 9.
+
 > **Reference:** [Create an Azure VM assessment](https://learn.microsoft.com/azure/migrate/how-to-create-assessment) | [Best practices for creating assessments](https://learn.microsoft.com/azure/migrate/best-practices-assessment)
 
 ---
