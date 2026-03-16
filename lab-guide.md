@@ -340,7 +340,7 @@ After an assessment runs, review the results to understand Azure readiness, sizi
 
 ### Access the assessment report
 
-1. Navigate to **Decide and plan** > **Assessments** > **Workloads**.
+1. Navigate to **Decide and plan** > **Assessments** .
 
 2. Select the assessment name to open the report.
 
