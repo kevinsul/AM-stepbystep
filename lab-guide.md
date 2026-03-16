@@ -72,17 +72,15 @@ The Azure Migrate Collector is a lightweight tool that performs an **offline, on
 
 ### Import the ZIP file into Azure Migrate
 
-1. In your Azure Migrate project, navigate to **Azure Migrate: Discovery and assessment**.
+1. From your Azure Migrate project **Overview** page, select the **Start discovery** button (located at the bottom of the main content area).
 
-2. Select **Discover** to open the discovery options panel.
+2. In the discovery panel that opens, under **How do you want to discover?**, select **Using an imported CSV / offline collector ZIP**.
 
-3. Under **How do you want to discover?**, select **Using Azure Migrate collector (offline ZIP)**.
+3. Select **Azure Migrate collector (ZIP)** from the **File type** dropdown.
 
-4. On the import page, select **Azure Migrate collector (ZIP)** from the **File type** dropdown.
+4. Select **Browse**, locate the downloaded **`Synthetic_40_VMs.zip`** file, and select it.
 
-5. Select **Browse**, locate the downloaded **`Synthetic_40_VMs.zip`** file, and select it.
-
-6. Select **Import** and monitor the import status in the portal.
+5. Select **Import** and monitor the import status in the portal.
 
    > **Warning:** Importing this ZIP file can take **up to 45 minutes** to complete. Do not close the browser tab or navigate away while the import is in progress. Wait for the portal to confirm a successful import before proceeding to the next part of this lab.
 
@@ -92,7 +90,7 @@ If you need to add more inventory later (for example, from a separate environmen
 
 1. Navigate to **Explore inventory** > **All inventory**.
 2. Select **Discover** > **Using collector**.
-3. Follow steps 4–6 above.
+3. Follow steps 3–5 above.
    > Multiple ZIP files from different hypervisor types (VMware, physical) can be imported into the same project.
 
 > **Reference:** [Discover servers using Azure Migrate collector](https://learn.microsoft.com/azure/migrate/how-to-discover-using-collector)
