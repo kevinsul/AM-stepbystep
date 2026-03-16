@@ -53,7 +53,7 @@ Some features in Azure Migrate are in preview and require a special feature-flag
 
    **[https://aka.ms/migrate/ameReport](https://aka.ms/migrate/ameReport)**
 
-3. You will be redirected back to your Azure Migrate project, but now with preview features (such as the new inventory experience and enhanced reporting) enabled for your session.
+3. The URL will load the Azure portal with preview features enabled. Once the page loads, navigate back to the Azure Migrate project you created in Part 1 (use the top search bar to find **Azure Migrate**, then select your project). Preview features such as the new inventory experience and enhanced reporting will now be active for your session.
 
 > **Tip:** Bookmark this URL or use it each time you open your Azure Migrate project to ensure preview features remain accessible.
 
