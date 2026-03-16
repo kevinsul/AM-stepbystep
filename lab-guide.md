@@ -205,6 +205,8 @@ Azure Migrate recognizes two special tag keys that unlock additional planning ca
 | `AzM_Environment` | `Prod` or `Dev` | Marks the workload's environment |
 | `AzM_MigrationIntent` | `Retain` or `Retire` | Marks the intended migration disposition |
 
+> **Preview notice:** As of the writing of this lab, these reserved tags (`AzM_Environment` and `AzM_MigrationIntent`) are **still in preview**. They are only recognized and applied by Azure Migrate when you are using the feature-flag URL from Part 2. If you access the project via the standard portal URL, these tags will not influence inventory filtering, assessments, or business cases. Official Microsoft documentation does not yet reference these tag keys; they will be documented publicly once the feature reaches general availability.
+
 ---
 
 ### Option A – Apply tags manually in the portal
