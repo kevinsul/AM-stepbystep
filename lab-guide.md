@@ -72,11 +72,14 @@ The Azure Migrate Collector is a lightweight tool that performs an **offline, on
 
 ### Import the ZIP file into Azure Migrate
 
-1. From your Azure Migrate project **Overview** page, select the **Start discovery** button (located at the bottom of the main content area).
+1. From your Azure Migrate project **Overview** page, select the **Start discovery** dropdown button. A menu will appear with three options:
+   - **Using appliance** – Continuous discovery, ideal for detailed inventory and dependencies.
+   - **Using collector** – Offline discovery, best for quick total cost benchmarking.
+   - **Using import** – CSV or RVTools import for lift and shift cost benchmarking.
 
-2. In the discovery panel that opens, under **How do you want to discover?**, select **Using an imported CSV / offline collector ZIP**.
+   Select **Using collector**.
 
-3. Select **Azure Migrate collector (ZIP)** from the **File type** dropdown.
+2. On the collector discovery page, select **Azure Migrate collector (ZIP)** from the **File type** dropdown.
 
 4. Select **Browse**, locate the downloaded **`Synthetic_40_VMs.zip`** file, and select it.
 
