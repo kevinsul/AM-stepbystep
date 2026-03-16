@@ -307,28 +307,26 @@ Assessments analyze your inventory and produce Azure readiness ratings, right-si
 
 ### Steps
 
-1. Navigate to **Explore inventory** > **All inventory** (or **Infrastructure inventory** for server-only assessments).
+1. In the left navigation pane, select **Decide and plan** > **Assessments**.
 
-2. Select the workloads you want to include in the assessment using the checkboxes. Use filters or tags to scope the selection (for example, filter by `AzM_Environment = Prod`).
+2. On the Assessments page, select **+ Create assessment**.
 
-3. Select **Create assessment** from the toolbar.
+3. The **Create assessment** wizard opens on the **Basics** tab. Provide the following:
+   - **Assessment name** – Enter a friendly name (e.g., `Prod-Servers-AzureVM-March2026`).
+   - **Add workloads** – Select **+ Add workloads** to choose the servers you want to include. Use filters or tags to scope the selection (for example, filter by `AzM_Environment = Prod`). You can also select **+ Add applications** to include application groupings.
 
-4. Provide the following:
-   - **Assessment name** – A friendly name (e.g., `Prod-Servers-AzureVM-March2026`).
-   - Review the number of workloads selected; select **Add workloads** if you need to include more.
-
-5. Select **Next** to configure assessment properties:
+4. Select **Next: General** to configure assessment properties:
    - **Target region** – The Azure region to size and price against.
    - **Default environment** – Production or Dev/Test (affects pricing).
    - **Sizing criteria** – *Performance-based* (uses collected performance data) or *As-is on-premises* (uses configured specs).
    - **Pricing options** – Azure offer type, currency, and applicable discounts.
    - **Azure Hybrid Benefit** – Apply if you have existing Windows Server or SQL Server licenses with Software Assurance.
 
-6. Select **Edit defaults** to review workload-specific settings for the assessment type (Azure VM, Azure SQL, etc.).
+5. Select **Next: Advanced** to review workload-specific settings for the assessment type (Azure VM, Azure SQL, etc.).
 
-7. Select **Save**, then **Create Assessment**.
+6. Select **Review + Create assessment**, review the summary, then select **Create assessment**.
 
-8. After the assessment is created, view it at **Decide and plan** > **Assessments** > **Workloads**.
+7. Once created, the assessment will appear in the **Assessments** list under **Decide and plan** > **Assessments**.
 
    > **Note:** For performance-based assessments, wait at least **24 hours** after discovery before creating the assessment to ensure sufficient performance data has been collected.
 
