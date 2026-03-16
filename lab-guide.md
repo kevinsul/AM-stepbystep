@@ -426,11 +426,50 @@ Azure Migrate can generate polished PowerPoint (PPTX) presentation reports direc
 
 ---
 
-## Part 11 – Use the Azure Migrate AI Agent *(Coming Soon)*
+## Part 11 – Use the Azure Copilot Migration Agent
 
-Azure Migrate includes an AI-powered agent that helps you navigate your migration data, answer questions about your inventory, and accelerate migration planning through natural language interaction.
+The **Azure Copilot migration agent** is a conversational AI experience built into Azure Migrate that helps you plan and analyze migrations using natural language. You can use it to explore discovered inventory, compare migration strategies, interpret assessment readiness, summarize business case ROI, and generate landing zone configurations.
 
-> **Details for this section will be added in a future update to this guide.**
+> **Preview notice:** The migration agent is currently in preview. It is accessible via the **standard Azure portal URL** — it does **not** require the feature-flag URL used in earlier parts of this lab. In fact, you must switch back to the regular portal URL for the agent to function correctly.
+
+### Prerequisites
+
+Before using the migration agent, confirm the following are in place for your tenant:
+
+- **Azure Copilot** is enabled. See [Manage access to Azure Copilot](https://learn.microsoft.com/en-us/azure/copilot/manage-access#manage-user-access-to-azure-copilot).
+- **Agents (preview)** is enabled in Azure Copilot. See [Manage access to Agents (preview) in Azure Copilot](https://learn.microsoft.com/en-us/azure/copilot/manage-access#manage-access-to-agents-preview-in-azure-copilot).
+
+> **Note:** The migration agent is not supported when **Bring your own storage (BYOS)** is enabled for Azure Copilot conversation history.
+
+### Steps
+
+1. **Switch to the standard portal URL.** If you currently have the feature-flag URL active in your browser, navigate to the standard Azure portal:
+
+   **[https://portal.azure.com](https://portal.azure.com)**
+
+   Then navigate back to your Azure Migrate project (search for **Azure Migrate** in the top search bar and select your project).
+
+2. On the project **Overview** page, locate the **AI assisted migration** tile in the **Summary** section. It is labeled **Migration agent (Preview)** and reads *"Accelerate your migration journey with the Migration agent!"*
+
+3. Select **Accelerate migration**.
+
+4. The Azure Copilot migration agent panel will open. You can now interact with the agent using natural language. Try the following starter prompt to explore your discovered inventory:
+
+   > *"Summarize the discovered inventory."*
+
+5. From there, you can continue the conversation with prompts such as:
+
+   - *"Show servers that are out of support."*
+   - *"What is the readiness of my workloads for Azure VMs?"*
+   - *"Provide the ROI summary for lift-and-shift."*
+   - *"Compare the ROI between lift-and-shift and modernization."*
+   - *"How should I plan moving VMware workloads to Azure?"*
+
+6. The agent uses the data from your Azure Migrate project — discovered inventory, assessments, and business cases — to tailor its responses. Conversation history is preserved across your session to provide more relevant guidance as you continue.
+
+> **Note:** The migration agent assists with **planning and analysis only**. Migration execution tasks (replication, test migrations, cutover) must be performed directly in the Azure Migrate portal.
+
+> **Reference:** [Azure Copilot migration agent (preview)](https://learn.microsoft.com/en-us/azure/migrate/azure-copilot-migration-agent)
 
 ---
 
