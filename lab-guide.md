@@ -336,42 +336,59 @@ Assessments analyze your inventory and produce Azure readiness ratings, right-si
 
 ## Part 9 – Review Assessment Reports
 
-After an assessment runs, review the results to understand Azure readiness, sizing recommendations, and cost estimates.
+After an assessment completes, review the results to understand migration paths, readiness, cost estimates, and emissions data.
 
 ### Access the assessment report
 
-1. Navigate to **Decide and plan** > **Assessments** .
+1. Navigate to **Decide and plan** > **Assessments**.
 
 2. Select the assessment name to open the report.
 
-### Assessment overview
+### Overview page
 
-The **Overview** page shows:
-- **Azure readiness** summary (Ready / Conditionally ready / Not ready / Unknown)
-- **Estimated monthly cost** for compute and storage
-- **Savings options** (Reserved Instances, Azure Hybrid Benefit)
+The **Overview** page is the starting point for reviewing results. It contains several key areas:
 
-### Readiness categories
+#### Workloads summary
+At the top left you will see the total number of workloads included in the assessment, along with a **View details** link to drill into the full workload list.
 
-| Status | Meaning |
+#### Migration preference
+Use the **Migration preference** dropdown to switch the recommended path between options such as **Modernize (AI ready)**, **Lift and shift**, and others. The recommended path and cost estimates update dynamically based on your selection.
+
+#### Migration paths
+The assessment presents up to three side-by-side migration path cards:
+
+| Path | Description |
 |---|---|
-| **Ready for Azure** | Workload can be migrated as-is; full Azure support expected. |
-| **Conditionally ready** | Workload may work in Azure but requires attention (e.g., old OS version). Review recommended remediation. |
-| **Not ready for Azure** | Workload cannot be hosted in Azure as configured (e.g., disk > 64 TB). Follow remediation guidance. |
-| **Readiness unknown** | Azure Migrate could not determine readiness due to insufficient data. |
+| **PaaS preferred (Recommended)** | Maximum readiness coverage with preference to PaaS targets. Balances replatforming and rehosting. |
+| **PaaS only** | All workloads targeted to PaaS services only. |
+| **Lift and shift to Azure VM** | Quick IaaS migration of all workloads to Azure VMs. |
 
-### Drill-down
+Each card shows:
+- **Ready %** – Percentage of workloads assessed as ready for that path.
+- **Cost** – Estimated total monthly cost (USD) for compute, storage, and security.
+- **Migration readiness and strategy breakdown** – Split of workloads by strategy: Replatform, Refactor, Rehost, Retain, Retire.
+- **Monthly cost estimate** – Itemized by Compute, Storage, and Security.
+- **Monthly emissions estimate** – Carbon footprint in KgCO2e for compute and storage.
+- **Performance coverage %** – How much of the sizing recommendation is based on collected performance data vs. defaults.
 
-- Select any workload in the **Readiness** view to see detailed recommendations including target VM size, disk configuration, network settings, and specific issue details.
+> **Tip:** A **Recommended path** star badge marks the path Azure Migrate considers most suitable given your migration preference. Select **View details** under any path card to explore workload-level results for that specific path.
 
-### Cost estimates
+#### Toolbar actions
+Along the top of the assessment you will find:
+- **Settings** – Modify assessment configuration.
+- **Recalculate** – Re-run the assessment with the current settings.
+- **Create wave** – Begin migration wave planning from the assessed workloads.
+- **Generate IaC** – Generate Infrastructure as Code templates for the assessed workloads.
+- **Export** – Download the assessment results as an Excel file for offline review or stakeholder sharing.
+- **Refresh** – Reload the latest results.
 
-- Review the **Cost estimates** section for monthly compute and storage cost aggregated across all assessed workloads.
-- Drill down to individual workloads for per-workload cost breakdowns.
+### Drill into a migration path
 
-### Export the assessment
+1. Select **View details** on any path card to open the detailed workload-level view for that path.
 
-- Select **Export assessment** (on the assessment Overview page) to download the report as an Excel file for offline review or stakeholder sharing.
+2. Review individual workload readiness, recommended Azure target (VM size, PaaS service, etc.), and per-workload monthly cost.
+
+3. Select any individual workload to see the full recommendation details including target SKU, disk configuration, and any issues or conditions affecting readiness.
 
 > **Reference:** [Review Azure VM assessment](https://learn.microsoft.com/azure/migrate/review-assessment) | [Assess VMware VMs for migration to Azure VMs](https://learn.microsoft.com/azure/migrate/tutorial-assess-vmware-azure-vm)
 
