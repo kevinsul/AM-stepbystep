@@ -394,7 +394,39 @@ Along the top of the assessment you will find:
 
 ---
 
-## Part 10 – Use the Azure Migrate AI Agent *(Coming Soon)*
+## Part 10 – Create PPTX Reports from Assessments
+
+Azure Migrate can generate polished PowerPoint (PPTX) presentation reports directly from your assessment data. These reports are ideal for sharing migration plans and cost summaries with stakeholders.
+
+> **Preview notice:** As of the writing of this lab, the Reports feature is **not yet publicly released** and is only accessible via the feature-flag URL used in Part 2. It is not currently documented in the official Microsoft docs. This is another key reason the feature-flag URL is required throughout this lab.
+
+### Steps
+
+1. In the left navigation pane, scroll down to **Manage** and select **Reports (Preview)**.
+
+2. The Reports page will open. If no reports have been created yet, you will see a **"No reports have been created yet"** placeholder with a **Generate Report** button.
+
+3. Select **Generate Report** (either the button in the toolbar or the one in the center of the page).
+
+4. In the report configuration panel that opens, fill in the following fields:
+
+   - **Name** – Enter a descriptive name for the report (e.g., `Migration-Report-March2026`).
+   - **Type** – Select the report types to include. By default both are checked:
+     - **Azure Modernization and Migration Report**
+     - **Security Insights Report**
+     > **Note:** The **Azure VMware Solution (AVS) migration report** cannot be created alongside other report types. Leave it unchecked for this lab.
+   - **Migration preference** – Select the migration preference that should drive the report (e.g., **Modernize (AI ready)**).
+   - **Configuration** – Select **Generate report using scope and settings from an existing assessment**, then choose the assessment you created in Part 8 from the dropdown.
+
+5. Select **Generate Report**.
+
+6. The report will appear in the **Reports (Preview)** list. Report generation may take **several minutes** to complete. Refresh the page periodically and wait for the status to indicate the report is ready before attempting to download it.
+
+7. Once complete, select the report name to download the generated PPTX file.
+
+---
+
+## Part 11 – Use the Azure Migrate AI Agent *(Coming Soon)*
 
 Azure Migrate includes an AI-powered agent that helps you navigate your migration data, answer questions about your inventory, and accelerate migration planning through natural language interaction.
 
